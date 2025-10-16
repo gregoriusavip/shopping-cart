@@ -1,18 +1,11 @@
 import mainLogo from "../assets/logo.webp";
-import mainLogo2X from "../assets/logo@2x.webp";
 
 function Header() {
-  let logoSrcSet = `${mainLogo} 24w, ${mainLogo2X} 40w`;
   return (
-    <header className="flex flex-row justify-between items-center">
-      <img
-        srcSet={logoSrcSet}
-        sizes="(width >= 40rem) 40px, 24px"
-        src={mainLogo2X}
-        alt="Logo of the website"
-      />
+    <header className="flex flex-row justify-between items-start sm:items-center">
+      <img src={mainLogo} alt="Logo of the website" className="rounded-2xl" />
       <nav>
-        <ol className="flex flex-row gap-3 items-center">
+        <ol className="flex flex-col gap-3 sm:flex-row sm:items-center not-sm:leading-none">
           <li>Home</li>
           <li>Products</li>
           <li className="material-symbols-outlined">shopping_cart</li>
