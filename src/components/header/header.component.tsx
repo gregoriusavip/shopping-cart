@@ -1,4 +1,4 @@
-import mainLogo from "../assets/logo.webp";
+import mainLogo from "./logo.webp";
 
 function Header() {
   return (
